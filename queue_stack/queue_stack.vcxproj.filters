@@ -21,6 +21,9 @@
     <ClInclude Include="queque.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="circu_queque.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="queque.c">
@@ -30,6 +33,15 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="test.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mystack.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="myqueue.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="circu_queque.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

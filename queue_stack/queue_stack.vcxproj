@@ -127,10 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="circu_queque.h" />
     <ClInclude Include="queque.h" />
     <ClInclude Include="stack.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="circu_queque.c" />
+    <ClCompile Include="myqueue.c" />
+    <ClCompile Include="mystack.c" />
     <ClCompile Include="queque.c" />
     <ClCompile Include="stack.c" />
     <ClCompile Include="test.c" />

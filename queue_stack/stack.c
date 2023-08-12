@@ -1,20 +1,12 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include"stack.h"
 
-stack* initstack(void)
+void initstack(stack* head)
 {
-	stack* head = NULL;
-	stack* temp=(stack*)malloc(sizeof(stack));
-	if (temp == NULL)
-	{
-		perror("malloc failed");
-		exit(-1);
-	}
-	head = temp;
 	head->capacity = 0;
 	head->top = 0;
 	head->data = NULL;
-	return head;
+
 }
 
 void pushstack(stack* head,DATATYPE x)
@@ -45,15 +37,15 @@ DATATYPE stacktop(stack* head)
 	assert(head);
 	return head->data[head->top-1];//top是指向下一个栈顶的
 }
-int StackEmpty(stack* head)
+bool StackEmpty(stack* head)
 {
 	assert(head);
 	if (head->top == 0)
 	{
-		return 1;
+		return true;
 	}
 	else
-		return 0;
+		return false;
 }
 void destroystack(stack* head)
 {
@@ -62,5 +54,4 @@ void destroystack(stack* head)
 	head->data = NULL;
 	head->capacity = 0;
 	head->top = 0;
-	free(head);
 }

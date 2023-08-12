@@ -13,7 +13,8 @@ typedef struct stack
 }stack;
 
 //初始化
-stack* initstack(void);
+
+void initstack(stack* head);
 //push
 void pushstack(stack* head,DATATYPE x);
 //pop
@@ -21,4 +22,4 @@ void popstack(stack* head);
 //获取栈顶元素
 DATATYPE stacktop(stack* head);
 void destroystack(stack* head);
-int StackEmpty(stack* head);
+bool StackEmpty(stack* head);//空返回true
